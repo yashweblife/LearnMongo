@@ -16,3 +16,14 @@ db.connect((err)=>{
         })
     }
 })
+app.get('/',(req, res)=>{
+    res.send("<h1>Hello</h1>")
+})
+app.get('/lists',(req, res)=>{
+    console.log(req)
+    res.send("Works")
+})
+
+app.listen(3000,()=>{
+    console.log("Working")
+})
