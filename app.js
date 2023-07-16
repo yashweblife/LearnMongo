@@ -23,6 +23,9 @@ app.get('/lists',(req, res)=>{
     console.log(req)
     res.send("Works")
 })
+app.get('users',(req, res)=>{
+    res.send("No Users")
+})
 
 app.listen(3000,()=>{
     console.log("Working")
